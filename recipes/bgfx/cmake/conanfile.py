@@ -38,7 +38,7 @@ class bgfxConan(ConanFile):
             self.requires("xorg/system")
             self.requires("opengl/system")
             # INFO: Wayland is optional, but we enable it by default on Linux - CMakeLists.txt:46
-            # LOCAL FIX (RockHero conan-recipes shadow of conancenter revision
+            # LOCAL FIX (this repository's shadow of conancenter revision
             # c1afac7cfc793827c09745e6d6887e57): upstream pins wayland/1.23.92 exactly, which
             # conflicts with sdl/xkbcommon's wayland/[>=1.22 <2] range resolving newer. A range
             # matches how every sibling consumes wayland. The shadow also packages the libraries'
